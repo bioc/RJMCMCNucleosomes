@@ -443,7 +443,7 @@ plotNucleosomes <- function(nucleosomePositions, reads,
     }
 
     ## Set variables differently if vector or list
-    if (class(nucleosomePositions)=="GRangesList") {
+    if (is(nucleosomePositions, "GRangesList")) {
         nbrItems <-length(nucleosomePositions)
         posColors <- c(rainbow(nbrItems), "gray")
         if (is.null(names) && !is.null(names(nucleosomePositions))) {

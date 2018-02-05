@@ -562,8 +562,8 @@ validatePlotNucleosomesParameters <- function(nucleosomePositions,
                     reads, seqName, xlab, ylab, names) {
 
     ## Validate that nucleosomePositions is a vector
-    if(!(class(nucleosomePositions) == "GRanges" ||
-            class(nucleosomePositions) == "GRangesList")){
+    if(!(is(nucleosomePositions, "GRanges") ||
+         is(nucleosomePositions, "GRangesList"))){
         stop("nucleosomePositions must be a \'GRanges\' or a \'GRangesList\'")
     }
 
@@ -616,7 +616,7 @@ validatePlotNucleosomesParameters <- function(nucleosomePositions,
         if (!is.vector(names)) {
             stop("names must be a vector or a list of character strings")
         }
-        if (!class(nucleosomePositions) == "GRangesList") {
+        if (!is(nucleosomePositions, "GRangesList")) {
             if(!(length(names) == 1) || !is.character(names)) {
                 stop("names must be a vector of one character string")
             }
