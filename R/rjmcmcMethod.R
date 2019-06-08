@@ -550,7 +550,7 @@ plotNucleosomes <- function(nucleosomePositions, reads,
 #'
 #' @author Pascal Belleau, Astrid Deschenes
 #' @importFrom GenomeInfoDb seqlevels
-#' @importFrom IRanges splitAsList
+#' @importFrom S4Vectors splitAsList
 #' @export
 segmentation <- function(reads, zeta = 147, delta, maxLength) {
 
