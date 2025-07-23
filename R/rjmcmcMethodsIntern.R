@@ -436,7 +436,7 @@ validateDirectoryParameters <- function(directory) {
 #' resultRJMCMC = NA, extendingSize = 74, chrLength = 10000000)}
 #'
 #' @author Astrid Deschenes
-#' @importFrom GenomeInfoDb Seqinfo
+#' @importFrom Seqinfo Seqinfo
 #' @importFrom S4Vectors isSingleInteger isSingleNumber
 #' @keywords internal
 #'
@@ -766,7 +766,7 @@ validateSegmentationParameters <- function(reads, zeta = 147, delta,
 #' @importFrom consensusSeekeR findConsensusPeakRegions
 #' @importFrom GenomicRanges GRanges findOverlaps
 #' @importFrom IRanges IRanges
-#' @importFrom GenomeInfoDb Seqinfo seqinfo seqnames genome
+#' @importFrom Seqinfo Seqinfo seqinfo seqnames genome
 #' @importFrom S4Vectors queryHits subjectHits
 #' @importFrom BiocGenerics sapply
 #' @keywords internal
